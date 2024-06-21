@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="AssStyle.css">
+    <script src="myScript.js"></script>
+</head>
+<body class="signUP">
+
+    <div class="quediv" id="que">
+        <h3> do you have an account?</h3>
+        <br>
+        <button onclick="HideAndShow('que', 'login')">yes</button>
+        <button onclick="HideAndShow('que', 'signup')">No</button>
+    </div>
+  <div class="signdiv" id="signup">
+       <h3>for registertion:</h3>
+
+                <form  method="GET" >
+                    <label for="Fname">First Name:</label>
+                    <input type="text" id="Fname" name="Fname" value="Fname" required placeholder="Alex"><br>
+                    <br>
+                    <label for="Uname">Lser Name:</label>
+                    <input type="text" id="Uname" name="Uname"   required placeholder="style"><br>
+                    <br>
+                    <lable for="Email">Email:</lable>
+                    <input type="text" id="Email" name="Email" required placeholder="mail@gamil.com"><br><br>
+                    <lable for="pass">Password:</lable>
+                    <input type="password" id="pass" name="pass" value="1234" required>
+                    <br><br>
+                    <label for="Age"> Age</label>
+                    <input type="number" id="Age " name="Age" min="18" max="60" step="1" required><br><br>
+                    <label for="Uname">LOcation:</label>
+                    <input type="text" id="Uname" name="Uname"   required placeholder="style">
+                    
+                    <br><br>
+                    <label> I have </label>
+                    <input type="checkbox" id="pet1" name="pet" >
+                    <label for="pet1">cat</label>
+                    <input type="checkbox" id="pet2" name="pet" >
+                    <label for="pet2">dog</label>
+
+                
+                    <br><br>
+                    
+
+                    <button onclick="registertion()"> submit</button>
+
+                    <button type="reset" value="reset">reset</button>
+
+                  </form>
+            
+    
+</div>  
+<div class="signdiv" id="login">
+ <h3>for login:</h3>
+  <form  method="GET" action="home.html" >
+      
+      <lable for="Email">Email:</lable>
+      <input type="text" id="Email" name="Email" required placeholder="mail@gamil.com"><br><br>
+      <lable for="pass">Password:</lable>
+      <input type="password" id="pass" name="pass" value="1234" required>
+      <br><br>
+      <button> login</button>
+      <h3>------------------------------------OR------------------------------------</h3>
+      <button> login with google</button> 
+      <button> login with apple</button>
+    </form>
+
+
+</div> 
+</body>
+</html>
